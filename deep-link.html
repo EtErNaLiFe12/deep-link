@@ -6,9 +6,9 @@
 <script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
+    <div>kakao message template test</div>
     <input type="button" onClick="sendLinkCustom();" value="Custom"/>
     <input type="button" onClick="sendLinkDefault();" value="Default"/>
-
 <script type="text/javascript">
     function sendLinkCustom() {
         Kakao.init("a8df32e30ea4dacd18e716f5e27130d1");
@@ -30,8 +30,8 @@ try {
         imageUrl:
           'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: 'http://localhost:5500/deep-link2.html',
+          webUrl: 'http://localhost:5500/deep-link2.html',
         },
       },
       social: {
@@ -43,15 +43,15 @@ try {
         {
           title: '웹으로 보기',
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
+            mobileWebUrl: 'http://localhost:5500/deep-link.html',
+            webUrl: 'http://localhost:5500/deep-link.html',
           },
         },
         {
           title: '앱으로 보기',
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
+            mobileWebUrl: 'http://localhost:5500/',
+            webUrl: 'http://localhost:5500/',
           },
         },
       ],
